@@ -1,0 +1,196 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ask{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 20px;
+}
+.ask-btn{
+    border-radius: 30px;
+    margin: 20px;
+    padding: 10px 15px;
+    background-color: black;
+    color: #fff;
+    outline: none;
+}
+.ask-btn:hover{
+    background-color: red;
+    color: black;
+}
+.store{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    display: none;
+}
+h1{
+    font-family: Cambria;
+    margin-top: 20px;
+}
+h3{
+    font-family: Cambria;
+    margin-top: 10px;
+}
+.calci{
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px black;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(red,blue);
+    margin: 20px 10px;
+}
+.cal-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-image: linear-gradient(green,yellow); */
+    margin: 10px;
+}
+
+.img-div{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+} 
+.img-div img{
+    border-radius: 50px;
+    margin-right: 40px;
+}
+.marks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.inpt{
+    margin: 10px;
+    outline: none;
+    border: none;
+    border-bottom: 3px solid blue;
+    border-radius: 20px;
+    padding:2px 5px;
+    font-size: 16px;
+    height: 25px;
+    padding-left: 15px;
+}
+#submit{
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: black;
+    padding:10px;
+   border: none;
+   outline: none;
+   box-shadow: 2px 2px 5px rgb(47, 0, 255);
+   color: white;
+}
+#submit:hover{
+    padding:12px 15px;
+}
+/* REMOVE ARROW FROM INPUT NUMBER */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.dis-inpt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result-box{
+    margin-top: 25px;
+    padding: 0px 5px;
+}
+#result{
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-family: Georgia;
+    line-height: 35px;
+}
+/* DISPLAY */
+#display{
+    margin-bottom: 20px;
+    display: none;
+}
+#display-heading{
+    margin-bottom: 20px;
+}
+#display-heading h1{
+    font-size: 26px;
+    padding-left: 15px;
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#display-table{
+  display: flex;
+  justify-content: space-around;
+}
+#display-table table{
+    width: 100%;
+}
+#display-table table tr td{
+    padding: 15px 9px;
+    text-align: center;
+}
+thead{
+    background-color: rgb(156, 154, 154);
+    color: black;
+    font-size: 18px;
+}
+tbody{
+    /* background-color: rgb(223, 188, 202); */
+}
+#noBooks{
+    text-align: center;
+    padding: 15px;
+}
+
+@media(max-width:550px){
+    .calci{
+        margin: 20px 2px;
+    }
+    .marks input{
+        padding:2px 5px;
+        font-size: 14px;
+        width: 95%;
+        height: 25px;
+    }
+    .img-div{
+        margin: 10px;
+    } 
+    .img-div img{
+        border-radius: 50px;
+        width:90%;
+        margin-left: 40px;
+    }
+    .container{
+        margin: 6px;
+    }
+    .cal-box{
+        display: block;
+    }
+    h1{
+        font-size: 26px;
+    }
+}

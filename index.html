@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result Calculation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- ASK USER'S CHOICE -->
+    <div class="ask">
+      <button type="submit" class="ask-btn" onclick="store()">Store Result</button>
+      <button type="submit" class="ask-btn" onclick="showM()">Show Result</button>
+    </div>
+    <!-- STORE RESULT-->
+    <div class="store" id="store">
+      <h1>Store Your Result</h1>
+      <div class="calci">
+        <input type="text" class="inpt" id="name" placeholder="Name">
+        <input type="text" class="inpt" id="roll_no" placeholder="Roll Number">
+        <div class="cal-box">
+          <div class="img-div">
+            <img src="Images/download.jpg">
+          </div>
+          <div class="marks">
+            <input type="number" class="inpt" id="Oops" placeholder="Oops">
+            <input type="number" class="inpt" id="Data_Analysis" placeholder="Data Analysis">
+            <input type="number" class="inpt" id="Maths" placeholder="Maths">
+            <input type="number" class="inpt" id="Cloud_Computing" placeholder="Cloud Computing">
+            <input type="number" class="inpt" id="Machine_Learning" placeholder="Machine Learning">
+            <button type="submit" id="submit" onclick="save()">Save Result</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- DISPLAY -->
+    <div class="row" id="display">
+      <div class="dis-inpt">
+        <input type="number" class="inpt" id="dis" placeholder="Enter Roll Number">
+        <button type="submit" id="submit" onclick="display()">Display</button>
+      </div>
+      <div class="cols" id="display-heading">
+        <center><span class="namee"></span>
+          <h1>Your Marks</h1>
+        </center>
+      </div>
+      <div class="cols" id="display-table">
+        <table border="1">
+          <thead>
+            <tr>
+              <td>Subject</td>
+              <td>Marks</td>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <!-- By JavaScript -->
+          </tbody>
+        </table>
+      </div>
+      <div class="result-box">
+        <p id="result"></p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+<!-- 
+    console.log(marks[1])
+
+    for(var prop in marks[1])
+{
+    for(var ob in marks[1][prop]){
+            console.log(marks[1][prop][ob])
+    }
+} -->
+<!-- 
+console.log(marks.length)
+console.log(marks[1])
+
+12
+for (var i = 0;i<=marks.length;i++)
+{
+    for(var prop in marks[i])
+    {
+        for(var ob in marks[i][prop])
+        {
+                console.log(marks[i][prop][ob])
+        }
+    }
+}
+
+OOPS
+for (var i = 0;i<=marks.length;i++)
+        {
+            for(var prop in marks[i])
+            {
+                for(var ob in marks[i][prop])
+                {
+                        console.log(ob)
+                }
+            }
+        } 
+-->
