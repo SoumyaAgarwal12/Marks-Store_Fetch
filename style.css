@@ -30,10 +30,6 @@
     color: black;
 }
 .store{
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     display: none;
 }
 h1{
@@ -60,7 +56,6 @@ h3{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* background-image: linear-gradient(green,yellow); */
     margin: 10px;
 }
 

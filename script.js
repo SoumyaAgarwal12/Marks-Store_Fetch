@@ -1,64 +1,3 @@
-// function calculate(){
-//     var oops = document.getElementById("Oops").value;
-//     var data_Analysis = document.getElementById("Data_Analysis").value;
-//     var maths = document.getElementById("Maths").value;
-//     var cloud_Computing = document.getElementById("Cloud_Computing").value;
-//     var machine_Learning = document.getElementById("Machine_Learning").value;
-
-//     var marks = parseFloat(oops) + parseFloat(data_Analysis) + parseFloat(maths) + parseFloat(cloud_Computing) + parseFloat(machine_Learning)
-
-//     if(oops!="" && data_Analysis!="" && maths!="" && cloud_Computing!="" && machine_Learning!="" && marks<=500)
-//     {
-//     var per = marks/5;
-
-//     if (per >= 80)
-//     {
-//         grade = 'A'
-//     }
-//     else if (per >= 60)
-//     {
-//         grade = 'B'
-//     }
-//     else if (per >= 33)
-//     {
-//         grade = 'C'
-//     }
-//     else
-//     {
-//         grade = 'F'
-//     }
-
-//     if (per >=33)
-//     {
-//         res = "Pass"
-//     }
-//     else{
-//         res = "Fail"
-//     }
-
-//     document.getElementById("result").innerHTML=
-//     `Your marks : ${marks} / 500 and Your Percentage : ${per}%.<br>Your Grade is ${grade}.
-//     You are ${res}.`
-// }
-// else
-// {
-//     alert("Error : Enter the Marks of all Subjects Correctly.(Calculation is Out of 500)`")
-// }
-// }
-
-// // INPUT VALIDATION
-// function validate(){
-//  for(var i=0;i<5;i++){
-//     if(document.getElementsByClassName("inpt")[i].value.match(/[0-9]*/)){
-//         return true;
-//     }
-//     else{
-//         alert("Input should be a number");
-//     }
-//  }
-
-// }
-
 class marks {
     constructor(oops, data_Analysis, maths, cloud_Computing, machine_Learning) {
         this.oops = oops
@@ -208,9 +147,3 @@ function save() {
         alert("Error : Enter the Marks of all Subjects Correctly.")
     }
 }
-
-
-// Local storage can only save strings, so storing objects requires that they be turned into 
-// strings using JSON. stringify - you can't ask local storage to store an object directly 
-// because it'll store “[object Object]”, which isn't right at all! That also means the object
-// must be run through JSON. ... parse(localStorage.
